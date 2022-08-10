@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f2f3;
+}
+
+
+.head-sector{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: #a91d17;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    padding-left: 24px;
+    padding-right: 50px;
+
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.header-logo{
+    height: 100px;
+    width: auto;
+    border-radius: 100px;
+}
+
+.slogan{
+    transform: rotate(-10deg);
+    font-size: 30px;
+    color: azure;
+    font-variant: small-caps;
+}
+
+.pages-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    padding: 0px 16px;
+    margin-left: 36px;
+    margin-right: 16px;
+}
+.pages-links a{
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+}
+
+.header-title{
+    background-color: #f1f2f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fc221a;
+    font-weight: 800;
+    text-align: center;
+    
+}
+.header-title1{
+    font-size: 25px;
+    margin: 24px;
+    margin-top: 70px;
+}
+.header-title2{
+    font-size: 65px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.header-title3{
+    font-size: 20px;
+    font-variant: small-caps;
+    margin: 24px;
+    margin-bottom: 100px;
+}
+
+.body-sector{
+    background-color: #f1f2f3;
+}
+
+.body-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+.tekma-box{
+    border: #a91d17 solid 3px;
+    text-align: center;
+    padding: 16px;
+}
+
+.tekma-title{
+    font-size: 40px;
+    margin: 16px;
+    margin-bottom: 8px;
+}
+
+.tekma-date{
+    font-variant: small-caps;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.tekma.kind{
+    font-size: 20px;
+    margin: 16px;
+}
+
+.tekma-logo-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+}
+
+.tekma-logo{
+    max-height: 150px;
+    max-width: auto;
+    border-radius: 100px;
+}
+
+.body-2{
+    display: flex;
+    flex-direction: column;
+    border: #540f0c solid 2px;
+    margin: 16px;
+    padding: 16px;
+}
+
+.spons-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+.spons-logo-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.spons-logo-cont img{
+    height: auto;
+    width: 400px;
+    border: #a91d17 solid 2px;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+
+.foot-sector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #540f0c;
+    color: azure;
+    padding: 24px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.footer p{
+    margin: 4px;
+}
+
+.foot-sector a{
+    color: azure;
+}
