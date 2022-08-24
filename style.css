@@ -63,10 +63,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: #fc221a;
+    color: azure;
     font-weight: 800;
     text-align: center;
-    
+    background-image: url(./images/clani-skupinska.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 2px gray;
 }
 .header-title1{
     font-size: 25px;
@@ -87,6 +91,7 @@ body{
 
 .body-sector{
     background-color: #f1f2f3;
+    padding: 16px;
 }
 
 .body-1{
