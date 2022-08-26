@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
+html,body
+{
+    overflow-x: auto;  
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f1f2f3;
+    /*background-color: aqua;*/
 }
 
 
@@ -26,7 +30,7 @@ body{
 .header-left{
     display: flex;
     align-items: center;
-    gap: 70px;
+    
 }
 
 .header-logo{
@@ -36,6 +40,7 @@ body{
     border-radius: 100px;
     align-items: center;
     justify-content: center;
+    margin-right: 70px;
 }
 
 .slogan{
@@ -47,20 +52,19 @@ body{
 
 .pages-links{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    gap: 36px;
     padding: 0px 16px;
     margin-left: 36px;
     padding-right: 16px;
     flex-wrap: wrap;
+    text-shadow: -2px 0 #a91d17, 0 2px #a91d17, 2px 0 #a91d17, 0 -2px #a91d17;
 }
 
 .link-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 36px;
     align-items: center;
 }
 
@@ -68,10 +72,11 @@ body{
     text-decoration: none;
     color: azure;
     font-size: 20px;
+    padding: 16px 18px;
 }
 
 .header-title{
-    background-color: #f1f2f3;
+    background-color:#a91d17;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +145,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 16px;
 }
 
 .tekma-logo{
@@ -148,6 +152,7 @@ body{
     max-width: 100%;
     border-radius: 100px;
     background-color: #ffffff;
+    margin: 8px;
 }
 
 .body-2{
@@ -162,22 +167,21 @@ body{
 .spons-title{
     font-size: 50px;
     font-weight: 700;
-    margin-left: 100px;
+    padding-left: 50px;
 }
 
 .spons-logo-cont{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: space-evenly;
 }
 
 .spons-logo-cont img{
-    max-height: 100px;
+    max-height: 70px;
     max-width: 100%;
     border: #a91d17 solid 0px;
     border-radius: 0px;
-    padding: 0px;
+    padding: 15px;
 }
 
 .foot-sector{
