@@ -30,9 +30,12 @@ body{
 }
 
 .header-logo{
+    display: flex;
     height: 100px;
     width: auto;
     border-radius: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .slogan{
@@ -49,8 +52,18 @@ body{
     gap: 36px;
     padding: 0px 16px;
     margin-left: 36px;
-    margin-right: 16px;
+    padding-right: 16px;
+    flex-wrap: wrap;
 }
+
+.link-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 36px;
+    align-items: center;
+}
+
 .pages-links a{
     text-decoration: none;
     color: azure;
@@ -132,8 +145,9 @@ body{
 
 .tekma-logo{
     max-height: 150px;
-    max-width: auto;
+    max-width: 100%;
     border-radius: 100px;
+    background-color: #ffffff;
 }
 
 .body-2{
@@ -142,10 +156,11 @@ body{
     border: #540f0c solid 2px;
     margin: 16px;
     padding: 16px;
+    background-color: #ffffff;
 }
 
 .spons-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     margin-left: 100px;
 }
@@ -158,13 +173,12 @@ body{
 }
 
 .spons-logo-cont img{
-    height: auto;
-    width: 400px;
-    border: #a91d17 solid 2px;
-    border-radius: 6px;
-    padding: 8px;
+    max-height: 100px;
+    max-width: 100%;
+    border: #a91d17 solid 0px;
+    border-radius: 0px;
+    padding: 0px;
 }
-
 
 .foot-sector{
     display: flex;
