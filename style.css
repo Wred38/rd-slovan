@@ -50,6 +50,18 @@ body{
     font-variant: small-caps;
 }
 
+.meni{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+}
+
+.meni p{
+    color: azure;
+    
+    
+}
+
 .pages-links{
     display: flex;
     justify-content: end;
@@ -86,14 +98,14 @@ body{
     text-align: center;
     background-image: url(./images/clani-skupinska.jpg) ;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 30%;
     background-repeat: no-repeat;
     text-shadow: 2px 2px 2px gray;
 }
 .header-title1{
     font-size: 25px;
     margin: 24px;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 .header-title2{
     font-size: 65px;
@@ -104,11 +116,11 @@ body{
     font-size: 20px;
     font-variant: small-caps;
     margin: 24px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .body-sector{
-    background-color: #f1f2f3;
+    background-color: #fafafa;
     padding: 16px;
 }
 
@@ -189,7 +201,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #540f0c;
-    color: azure;
+    color: #ffffff;
     padding: 24px;
 }
 
@@ -197,13 +209,70 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 24px;
+    padding-top: 16px;
 }
 
 .footer p{
     margin: 4px;
 }
 
+.foot-sector img{
+    height: 42px;
+    width: auto;
+    padding: 16px 8px;
+}
+
 .foot-sector a{
-    color: azure;
+    color: #ffffff;
+}
+
+.title{
+    padding: 20px 100px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin: 24px;
+}
+
+.info h2{
+    display: flex;
+    flex: none;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+.info p{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.info a{
+    color: #000000;
+}
+
+.info-soc{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin-top: 24px;
+    padding-bottom: 64px;
+}
+
+.info-soc h2{
+    display: flex;
+    flex: none;
+    padding-left: 8px;
+    text-align: right;
+}
+
+.info-soc img{
+    height: 48px;
+    width: auto;
+    padding: 0px 8px;
 }

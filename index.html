@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cc973ad972.js" crossorigin="anonymous"></script>
     <title>RD Slovan</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +13,12 @@
         <div class="header">
             <div class="header-left">
                 <img src="./images/Slovan-logo.jpg" alt="Slovan logo" class="header-logo">
-                <p class="slogan">#slovanovakri</p>
+                <div>
+                    <p class="slogan">#slovanovakri</p>
+                    <div class="meni">
+                        <p>Meni <i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
             </div>
             <div class="pages-links">
                 <div class="link-box">
@@ -21,7 +27,7 @@
                 </div>
                 <div class="link-box">
                     <a href="#">Koledar</a>
-                    <a href="#">Kontakt</a>
+                    <a href="kontakt.html">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -60,14 +66,21 @@
     </div>
     <div class="foot-sector">
         <div>
-            Instagram: <a href="https://www.instagram.com/rd_slovan/" target="_blank" rel="noopener noreferrer">@rd_slovan</a>
+            <a href="https://www.instagram.com/rd_slovan/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/instagram-logo-white.svg" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/rdslovan" target="_blank" rel="noopener noreferrer">
+                <img src="./images/facebook-logo-white.svg" alt="Facebook logo"></a>
         </div>
         <div>
-            Facebook: <a href="https://www.facebook.com/rdslovan" target="_blank" rel="noopener noreferrer">rdslovan</a>
+            <a href="mailto: info@rdslovan.si">info@rdslovan.si</a>
         </div>
         <div class="footer">
             <p>RD LL GROSIST SLOVAN</p>
-            <p>2022</p>
+            <p class="currentYear"></p>
+            <script>
+                para = document.querySelector('.currentYear');
+                para.textContent = new Date().getFullYear()
+            </script>
         </div>
     </div>
     
