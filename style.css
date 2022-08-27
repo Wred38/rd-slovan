@@ -33,14 +33,21 @@ body{
     
 }
 
-.header-logo{
+.header-logo-cont{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
     height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-right: 70px;
+}
+
+.header-logo{
+    height: 120px;
     width: auto;
     border-radius: 100px;
-    align-items: center;
-    justify-content: center;
-    margin-right: 70px;
 }
 
 .slogan{
