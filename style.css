@@ -166,6 +166,22 @@ body{
     align-items: center;
 }
 
+.tekma-logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    margin: 8px;
+}
+
+.tekma-logo-slovan{
+    max-height: 190px;
+    border-radius: 100px;
+}
+
 .tekma-logo{
     max-height: 150px;
     max-width: 100%;
