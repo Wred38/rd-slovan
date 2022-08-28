@@ -6,5 +6,6 @@ TODO:
 dodaj sponzorje
 reci linu za skupinsko sliko
 dodaj sliko na kontakt page
+dokoncaj tekme
 
 uredi overflow

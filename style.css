@@ -7,7 +7,7 @@ html,body
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f1f2f3;
+    background-color: #fafafa;
     /*background-color: aqua;*/
 }
 
@@ -57,11 +57,25 @@ body{
     font-variant: small-caps;
 }
 
-.meni{
+@media (min-width: 500px) {
+    .meni {
+        display: none; /* Doesn’t display mydiv-2 at screen sizes upto 700px  */
+    }
+}
+
+@media (max-width: 500px) {
+    .meni {
+        display: flex;
+        justify-content: end;
+        align-items: baseline;
+    }
+}
+
+/*.meni{
     display: flex;
     justify-content: end;
     align-items: baseline;
-}
+}*/
 
 .meni p{
     color: azure;
@@ -298,4 +312,60 @@ body{
     height: 48px;
     width: auto;
     padding: 0px 8px;
+}
+
+.koledar-piece{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 52px;
+    background-color: #dbdbdb;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 4px 0px;
+    border-radius: 2px;
+}
+
+.koledar-piece-l{
+    text-align: center;
+}
+
+.koledar-piece-l p{
+    margin: 4px 0px;
+}
+
+.koledar-piece-m{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 20px;
+}
+
+.koledar-team{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.koledar-team p{
+    padding: 16px;
+}
+
+.koledar-rez{
+    display: flex;
+    align-items: center;
+    background-color: #e1221c;
+    color: #fafafa;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.koledar-piece-m img{
+    width: 52px;
+    height: 52px;
+}
+
+.koledar-piece-r p{
+    margin: 16px 0px;
 }
