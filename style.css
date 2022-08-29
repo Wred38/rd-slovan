@@ -316,9 +316,9 @@ body{
 
 .koledar-piece{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    padding: 0px 52px;
+    padding: 0px 36px;
     background-color: #dbdbdb;
     font-size: 18px;
     font-weight: 700;
@@ -327,7 +327,7 @@ body{
 }
 
 .koledar-piece-l{
-    text-align: center;
+    text-align: left;
 }
 
 .koledar-piece-l p{
@@ -364,6 +364,10 @@ body{
 .koledar-piece-m img{
     width: 52px;
     height: 52px;
+}
+
+.koledar-piece-r{
+    text-align: right;
 }
 
 .koledar-piece-r p{
