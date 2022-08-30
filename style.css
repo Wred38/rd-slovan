@@ -225,7 +225,7 @@ body{
     justify-content: space-evenly;
 }
 
-.spons-logo-cont img{
+.spons-logo-cont img, .spons-logo-cont iframe{
     max-height: 70px;
     max-width: 100%;
     border: #a91d17 solid 0px;
@@ -265,8 +265,29 @@ body{
 
 .title{
     padding: 20px 100px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 300;
+}
+
+.kontakt-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+    .kontakt-sideimg{
+        flex: 0 1 auto;
+        max-height: 450px;
+        width: auto;
+        padding-top: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .kontakt-sideimg{
+        display: none;
+    }
 }
 
 .info{
@@ -372,4 +393,29 @@ body{
 
 .koledar-piece-r p{
     margin: 16px 0px;
+}
+
+.galerija-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galerija-cont img{
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #dbdbdb;
+    margin: 3px;
+}
+
+.photographer{
+    padding: 0px 110px;
+    margin: 0px;
+    margin-bottom: 80px;
+}
+
+#galerija-title{
+    padding-bottom: 8px;
+    margin-bottom: 0px;
 }
