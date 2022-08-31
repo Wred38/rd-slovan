@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html,body
-{
-    overflow-x: auto;  
+html,
+body {
+    overflow-x: auto;
 }
-body{
+
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
 }
 
 
-.head-sector{
+.head-sector {
     display: flex;
     flex-direction: column;
 }
 
-.header{
+.header {
     background-color: #a91d17;
     display: flex;
     justify-content: space-between;
@@ -26,13 +27,13 @@ body{
 
 }
 
-.header-left{
+.header-left {
     display: flex;
     align-items: center;
-    
+
 }
 
-.header-logo-cont{
+.header-logo-cont {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +44,13 @@ body{
     margin-right: 70px;
 }
 
-.header-logo{
+.header-logo {
     height: 120px;
     width: auto;
     border-radius: 100px;
 }
 
-.slogan{
+.slogan {
     transform: rotate(-10deg);
     width: 250px;
 }
@@ -68,11 +69,11 @@ body{
     }
 }
 
-.meni p{
+.meni p {
     color: azure;
 }
 
-.pages-links{
+.pages-links {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -83,22 +84,22 @@ body{
     text-shadow: -2px 0 #a91d17, 0 2px #a91d17, 2px 0 #a91d17, 0 -2px #a91d17;
 }
 
-.link-box{
+.link-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.pages-links a{
+.pages-links a {
     text-decoration: none;
     color: azure;
     font-size: 20px;
     padding: 16px 18px;
 }
 
-.header-title{
-    background-color:#a91d17;
+.header-title {
+    background-color: #a91d17;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,76 +107,80 @@ body{
     color: azure;
     font-weight: 800;
     text-align: center;
-    background-image: url(./images/clani-skupinska.jpg) ;
+    background-image: url(./images/clani-skupinska.jpg);
     background-size: cover;
     background-position: 50% 30%;
     background-repeat: no-repeat;
     text-shadow: 2px 2px 2px gray;
 }
-.header-title1{
+
+.header-title1 {
     font-size: 25px;
     margin: 24px;
     margin-top: 100px;
 }
-.header-title2{
+
+.header-title2 {
     font-size: 65px;
     margin: 0;
     margin-bottom: 16px;
 }
-.header-title3{
+
+.header-title3 {
     font-size: 20px;
     font-variant: small-caps;
     margin: 24px;
     margin-bottom: 120px;
 }
 
-.body-sector{
+.body-sector {
     background-color: #fafafa;
     padding: 16px;
 }
 
-.body-1{
+.body-1 {
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
 }
-.tekma-box{
+
+.tekma-box {
     border: #a91d17 solid 3px;
     text-align: center;
     padding: 16px;
 }
 
-.tekma-title{
+.tekma-title {
     font-size: 40px;
     margin: 16px;
     margin-bottom: 8px;
 }
 
-.tekma-date{
+.tekma-date {
     font-variant: small-caps;
     font-size: 24px;
     margin: 0px;
 }
 
-.tekma-time{
+.tekma-time {
     font-size: 20px;
     margin-top: 4px;
     margin-bottom: 16px;
 
 }
 
-.tekma.kind{
+.tekma.kind {
     font-size: 20px;
     margin: 16px;
 }
 
-.tekma-logo-cont{
+.tekma-logo-cont {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.tekma-logo{
+.tekma-logo {
     display: flex;
     max-height: 150px;
     max-width: 100%;
@@ -183,7 +188,7 @@ body{
     justify-content: space-between;
 }
 
-.body-2{
+.body-2 {
     display: flex;
     flex-direction: column;
     border: #540f0c solid 2px;
@@ -192,36 +197,36 @@ body{
     background-color: #ffffff;
 }
 
-.spons-title p{
+.spons-title p {
     font-size: 50px;
     font-weight: 700;
     padding-left: 50px;
 }
 
-.generalni-sponzor{
+.generalni-sponzor {
     justify-content: left;
+    padding-left: 70px;
+    padding-bottom: 24px;
 }
 
-.generalni-sponzor img{
-    max-height: 120px;
+.generalni-sponzor img {
+    max-height: 300px;
     max-width: 100%;
-    margin-left: 70px;
-    margin-bottom: 24px;
 }
 
-.spons-logo-cont{
+.spons-logo-cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.spons-logo-cont img{
+.spons-logo-cont img {
     max-height: 70px;
     max-width: 100%;
     padding: 15px;
 }
 
-.foot-sector{
+.foot-sector {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,40 +235,40 @@ body{
     padding: 24px;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 16px;
 }
 
-.footer p{
+.footer p {
     margin: 4px;
 }
 
-.foot-sector img{
+.foot-sector img {
     height: 42px;
     width: auto;
     padding: 16px 8px;
 }
 
-.foot-sector a{
+.foot-sector a {
     color: #ffffff;
 }
 
-.title{
+.title {
     padding: 20px 100px;
     font-size: 60px;
     font-weight: 300;
 }
 
-.kontakt-cont{
+.kontakt-cont {
     display: flex;
     justify-content: space-between;
 }
 
 @media (min-width: 800px) {
-    .kontakt-sideimg{
+    .kontakt-sideimg {
         flex: 0 1 auto;
         max-height: 450px;
         width: auto;
@@ -272,19 +277,19 @@ body{
 }
 
 @media (max-width: 800px) {
-    .kontakt-sideimg{
+    .kontakt-sideimg {
         display: none;
     }
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     padding-left: 100px;
     margin: 24px;
 }
 
-.info h2{
+.info h2 {
     display: flex;
     flex: none;
     padding-left: 8px;
@@ -292,16 +297,16 @@ body{
     text-align: left;
 }
 
-.info p{
+.info p {
     font-size: 18px;
     font-weight: 200;
 }
 
-.info a{
+.info a {
     color: #000000;
 }
 
-.info-soc{
+.info-soc {
     display: flex;
     flex-direction: column;
     padding-left: 100px;
@@ -309,22 +314,22 @@ body{
     padding-bottom: 64px;
 }
 
-.info-soc h2{
+.info-soc h2 {
     display: flex;
     flex: none;
     padding-left: 8px;
     text-align: right;
 }
 
-.info-soc img{
+.info-soc img {
     height: 48px;
     width: auto;
     padding: 0px 8px;
 }
 
-.koledar-piece{
+.koledar-piece {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 0px 36px;
     background-color: #dbdbdb;
@@ -334,33 +339,33 @@ body{
     border-radius: 2px;
 }
 
-.koledar-piece-l{
+.koledar-piece-l {
     text-align: left;
 }
 
-.koledar-piece-l p{
+.koledar-piece-l p {
     margin: 4px 0px;
 }
 
-.koledar-piece-m{
+.koledar-piece-m {
     display: flex;
     align-items: center;
     gap: 24px;
     font-size: 20px;
 }
 
-.koledar-team{
+.koledar-team {
     display: flex;
     align-items: center;
     font-size: 20px;
     padding: 16px;
 }
 
-.koledar-team p{
+.koledar-team p {
     padding: 16px;
 }
 
-.koledar-rez{
+.koledar-rez {
     display: flex;
     align-items: center;
     background-color: #e1221c;
@@ -369,26 +374,26 @@ body{
     padding: 8px;
 }
 
-.koledar-piece-m img{
+.koledar-piece-m img {
     width: 52px;
     height: 52px;
 }
 
-.koledar-piece-r{
+.koledar-piece-r {
     text-align: right;
 }
 
-.koledar-piece-r p{
+.koledar-piece-r p {
     margin: 16px 0px;
 }
 
-.galerija-cont{
+.galerija-cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.galerija-cont img{
+.galerija-cont img {
     width: 400px;
     height: auto;
     border-radius: 5px;
@@ -396,13 +401,34 @@ body{
     margin: 3px;
 }
 
-.photographer{
+.photographer {
     padding: 0px 110px;
     margin: 0px;
     margin-bottom: 80px;
 }
 
-#galerija-title{
+#galerija-title {
     padding-bottom: 8px;
     margin-bottom: 0px;
+}
+
+.player-cont {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.player-cont img {
+    width: 250px;
+    height: auto;
+    margin-right: 24px;
+    border-radius: 4px;
+}
+
+.player-cont p {
+    font-size: 20px;
+}
+
+.player-cont .player-name {
+    font-size: 28px;
+    font-weight: bold;
 }
