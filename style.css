@@ -8,7 +8,6 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
-    /*background-color: aqua;*/
 }
 
 
@@ -52,18 +51,16 @@ body{
 
 .slogan{
     transform: rotate(-10deg);
-    font-size: 30px;
-    color: azure;
-    font-variant: small-caps;
+    width: 250px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 570px) {
     .meni {
-        display: none; /* Doesn’t display mydiv-2 at screen sizes upto 700px  */
+        display: none;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
     .meni {
         display: flex;
         justify-content: end;
@@ -71,16 +68,8 @@ body{
     }
 }
 
-/*.meni{
-    display: flex;
-    justify-content: end;
-    align-items: baseline;
-}*/
-
 .meni p{
     color: azure;
-    
-    
 }
 
 .pages-links{
@@ -166,7 +155,13 @@ body{
     font-variant: small-caps;
     font-size: 24px;
     margin: 0px;
+}
+
+.tekma-time{
+    font-size: 20px;
+    margin-top: 4px;
     margin-bottom: 16px;
+
 }
 
 .tekma.kind{
@@ -204,9 +199,14 @@ body{
 }
 
 .generalni-sponzor{
-    /*border: 2px solid #000000;*/
+    justify-content: left;
+}
+
+.generalni-sponzor img{
     max-height: 120px;
     max-width: 100%;
+    margin-left: 70px;
+    margin-bottom: 24px;
 }
 
 .spons-logo-cont{
@@ -267,7 +267,6 @@ body{
         flex: 0 1 auto;
         max-height: 450px;
         width: auto;
-        padding-top: 50px;
         padding-right: 50px;
     }
 }

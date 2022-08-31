@@ -3,9 +3,10 @@ website for rd slovan
 
 
 TODO:
-dodaj sponzorje
-cropaj slike sponzorjev
-dodaj uro k naslednji tekmi
+?? dodaj sponzorje ??
+
+testiraj na mobile
+clanska ekipa page
 
 uredi alignment na koledarju
 uredi overflow
