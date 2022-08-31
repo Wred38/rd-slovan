@@ -180,28 +180,12 @@ body{
     align-items: center;
 }
 
-.tekma-logo-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 150px;
-    max-width: 150px;
-    border-radius: 100px;
-    background-color: #ffffff;
-    margin: 8px;
-}
-
-.tekma-logo-slovan{
-    max-height: 190px;
-    border-radius: 100px;
-}
-
 .tekma-logo{
+    display: flex;
     max-height: 150px;
     max-width: 100%;
-    border-radius: 100px;
-    background-color: #ffffff;
     margin: 8px;
+    justify-content: space-between;
 }
 
 .body-2{
@@ -213,10 +197,16 @@ body{
     background-color: #ffffff;
 }
 
-.spons-title{
+.spons-title p{
     font-size: 50px;
     font-weight: 700;
     padding-left: 50px;
+}
+
+.generalni-sponzor{
+    /*border: 2px solid #000000;*/
+    max-height: 120px;
+    max-width: 100%;
 }
 
 .spons-logo-cont{
@@ -225,11 +215,9 @@ body{
     justify-content: space-evenly;
 }
 
-.spons-logo-cont img, .spons-logo-cont iframe{
+.spons-logo-cont img{
     max-height: 70px;
     max-width: 100%;
-    border: #a91d17 solid 0px;
-    border-radius: 0px;
     padding: 15px;
 }
 

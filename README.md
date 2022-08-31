@@ -4,7 +4,8 @@ website for rd slovan
 
 TODO:
 dodaj sponzorje
-zamenjaj logotipe na koledarju
-uredi alignment na koledarju
+cropaj slike sponzorjev
+dodaj uro k naslednji tekmi
 
+uredi alignment na koledarju
 uredi overflow
