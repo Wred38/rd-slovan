@@ -419,7 +419,7 @@ body {
 
 .player-cont img {
     width: 250px;
-    height: auto;
+    height: max-content;
     margin-right: 24px;
     border-radius: 4px;
 }

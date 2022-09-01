@@ -5,6 +5,8 @@ website for rd slovan
 TODO:
 visina yankovskyy, sebalj, pirnat
 strokovni stab
+obrezat slike
+
 
 ?? dodaj sponzorje ??
 
