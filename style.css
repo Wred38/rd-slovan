@@ -3,6 +3,7 @@
 html,
 body {
     overflow-x: auto;
+    height: 100%;
 }
 
 body {
@@ -73,25 +74,64 @@ body {
     color: azure;
 }
 
-.pages-links {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 0px 16px;
-    margin-left: 36px;
-    padding-right: 16px;
-    flex-wrap: wrap;
-    text-shadow: -2px 0 #a91d17, 0 2px #a91d17, 2px 0 #a91d17, 0 -2px #a91d17;
+@media(min-width: 940px) {
+    .pages-links {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0px 16px;
+        margin-left: 36px;
+        padding-right: 16px;
+        flex-wrap: wrap;
+        text-shadow: -2px 0 #a91d17, 0 2px #a91d17, 2px 0 #a91d17, 0 -2px #a91d17;
+    }
+
+    .link-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.link-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+@media(max-width: 940px) {
+    .pages-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 16px;
+        margin-left: 36px;
+        padding-right: 16px;
+        text-shadow: -2px 0 #a91d17, 0 2px #a91d17, 2px 0 #a91d17, 0 -2px #a91d17;
+    }
+
+    .link-box {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
+
+@media(max-width: 820px) {
+    .pages-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 16px;
+        margin-left: 36px;
+        padding-right: 16px;
+        text-shadow: -2px 0 #a91d17, 0 2px #a91d17, 2px 0 #a91d17, 0 -2px #a91d17;
+    }
+
+    .link-box {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
 
 .pages-links a {
+    text-align: center;
     text-decoration: none;
     color: azure;
     font-size: 20px;
@@ -107,9 +147,9 @@ body {
     color: azure;
     font-weight: 800;
     text-align: center;
-    background-image: url(./images/clani-skupinska.jpg);
+    background-image: url(./images/igralci/Skupinska_clani.png);
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: 0% 50%;
     background-repeat: no-repeat;
     text-shadow: 2px 2px 2px gray;
 }
@@ -141,7 +181,7 @@ body {
 .body-1 {
     display: flex;
     justify-content: center;
-    margin-bottom: 56px;
+    margin-bottom: 100px;
 }
 
 .tekma-box {
@@ -203,27 +243,59 @@ body {
     padding-left: 50px;
 }
 
-.generalni-sponzor {
-    justify-content: left;
-    padding-left: 70px;
-    padding-bottom: 24px;
+
+.spons-logo-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.generalni-sponzor img {
-    max-height: 300px;
+.spons-logo-cont img {
+    padding: 8px;
+}
+
+.general-sponsor img {
+    max-height: 150px;
     max-width: 100%;
 }
 
-.spons-logo-cont {
+.spons-tier1 {
+    padding-bottom: 16px;
+}
+
+.spons-tier1 img {
+    max-height: 110px;
+    max-width: 100%;
+}
+
+.spons-tier2,
+.spons-tier3,
+.spons-tier4,
+.spons-tier5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.spons-logo-cont img {
+.spons-tier2 img {
     max-height: 70px;
     max-width: 100%;
-    padding: 15px;
+}
+
+.spons-tier3 img {
+    max-height: 60px;
+    max-width: 100%;
+}
+
+.spons-tier4 img {
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.spons-tier5 img {
+    max-height: 40px;
+    max-width: 100%;
 }
 
 .foot-sector {
@@ -415,13 +487,25 @@ body {
 .player-cont {
     display: flex;
     margin-bottom: 24px;
+    margin-left: 42px;
 }
 
-.player-cont img {
-    width: 250px;
-    height: max-content;
-    margin-right: 24px;
-    border-radius: 4px;
+@media (min-width: 450px) {
+    .player-cont img {
+        max-width: 250px;
+        height: 100%;
+        margin-right: 24px;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 450px) {
+    .player-cont img {
+        max-width: 150px;
+        height: 100%;
+        margin-right: 24px;
+        border-radius: 4px;
+    }
 }
 
 .player-cont p {

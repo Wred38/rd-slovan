@@ -3,12 +3,14 @@ website for rd slovan
 
 
 TODO:
-visina yankovskyy, sebalj, pirnat
-strokovni stab
-obrezat slike
+visina, teza yankovskyy
+vloga jakata
+slika pirnat, stopar
+a sponzorje iz interneta
+povecaj energetika logo
 
 
-?? dodaj sponzorje ??
+dodaj sponzorje
 
 testiraj na mobile
 clanska ekipa page
@@ -26,3 +28,9 @@ age
 pozicija
 visina
 teza
+
+
+
+DOMENA:
+spletnik.si
+
