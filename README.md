@@ -3,17 +3,13 @@ website for rd slovan
 
 
 TODO:
-visina, teza yankovskyy
-vloga jakata
-slika pirnat, stopar
-a sponzorje iz interneta
-povecaj energetika logo
+mini rokomet
 
+slika pirnat, stopar, cvijo
 
-dodaj sponzorje
+a je sponsor arangement uredu
 
 testiraj na mobile
-clanska ekipa page
 
 uredi alignment na koledarju
 uredi overflow

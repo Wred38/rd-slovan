@@ -9,37 +9,17 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="javascript.js"></script>
     <script src="https://kit.fontawesome.com/cc973ad972.js" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <title>&Ccaron;lanska ekipa - RD Slovan</title>
 </head>
 
 <body>
-    <div class="head-sector">
-        <div class="header">
-            <div class="header-left">
-                <div class="header-logo-cont">
-                    <img src="./images/Slovan-logo.svg" alt="Slovan logo" class="header-logo">
-                </div>
-                <div>
-                    <img class="slogan" src="./images/slovan/slovanovakri-w.svg" alt="#slovanovakri">
-                    <div class="meni">
-                        <p>Meni <i class="fa-solid fa-arrow-right"></i></p>
-                    </div>
-                </div>
-            </div>
-            <div class="pages-links">
-                <a href="index.html">Domov</a>
-                <a href="clanskaEkipa.html">&Ccaron;lanska<br>ekipa</a>
-                <a href="galerija.html">Galerija</a>
-                <a href="koledar.html">Koledar</a>
-                <a href="kontakt.html">Kontakt</a>
-            </div>
-        </div>
-        <div class="header-title">
-            <p class="header-title1">ROKOMETNO DRU&Scaron;TVO</p>
-            <P class="header-title2">RD LL GROSIST SLOVAN</P>
-            <p class="header-title3">Ljubljana - Slovenija</p>
-        </div>
-    </div>
+    <div id="header"></div>
     <div class="body-sector">
         <div>
             <h1 class="title">&Ccaron;lanska ekipa</h1>
@@ -253,9 +233,6 @@
                     <p>Vloga: Fizioterapevt</p>
                 </div>
             </div>
-
-
-
             <script>
                 getAge('11/22/1994', '#Selakovic')
                 getAge('01/08/1998', '#Krbavcic')
@@ -278,6 +255,7 @@
             </script>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 
 </html>

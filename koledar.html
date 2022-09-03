@@ -8,37 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/cc973ad972.js" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <title>Koledar - RD Slovan</title>
 </head>
 
 <body>
-    <div class="head-sector">
-        <div class="header">
-            <div class="header-left">
-                <div class="header-logo-cont">
-                    <img src="./images/Slovan-logo.svg" alt="Slovan logo" class="header-logo">
-                </div>
-                <div>
-                    <img class="slogan" src="./images/slovan/slovanovakri-w.svg" alt="#slovanovakri">
-                    <div class="meni">
-                        <p>Meni <i class="fa-solid fa-arrow-right"></i></p>
-                    </div>
-                </div>
-            </div>
-            <div class="pages-links">
-                <a href="index.html">Domov</a>
-                <a href="clanskaEkipa.html">&Ccaron;lanska<br>ekipa</a>
-                <a href="galerija.html">Galerija</a>
-                <a href="koledar.html">Koledar</a>
-                <a href="kontakt.html">Kontakt</a>
-            </div>
-        </div>
-        <div class="header-title">
-            <p class="header-title1">ROKOMETNO DRU&Scaron;TVO</p>
-            <P class="header-title2">RD LL GROSIST SLOVAN</P>
-            <p class="header-title3">Ljubljana - Slovenija</p>
-        </div>
-    </div>
+    <div id="header"></div>
     <div class="body-sector">
         <h1 class="title">Koledar tekem - 2022/2023</h1>
         <div class="koledar-cont">
@@ -590,25 +570,7 @@
             </div>
         </div>
     </div>
-    <div class="foot-sector">
-        <div>
-            <a href="https://www.instagram.com/rd_slovan/" target="_blank" rel="noopener noreferrer" title="@rd_slovan">
-                <img src="./images/instagram-logo-white.svg" alt="Instagram logo"></a>
-            <a href="https://www.facebook.com/rdslovan" target="_blank" rel="noopener noreferrer" title="rdslovan">
-                <img src="./images/facebook-logo-white.svg" alt="Facebook logo"></a>
-        </div>
-        <div>
-            <a href="mailto: info@rdslovan.si">info@rdslovan.si</a>
-        </div>
-        <div class="footer">
-            <p>RD LL GROSIST SLOVAN</p>
-            <p class="currentYear"></p>
-            <script>
-                para = document.querySelector('.currentYear');
-                para.textContent = new Date().getFullYear()
-            </script>
-        </div>
-    </div>
+    <div id="footer"></div>
 </body>
 
 </html>
