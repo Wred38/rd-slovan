@@ -516,3 +516,8 @@ body {
     font-size: 28px;
     font-weight: bold;
 }
+
+.prijavnica {
+    width: 100vw;
+    height: auto;
+}
