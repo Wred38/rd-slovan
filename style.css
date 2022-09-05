@@ -517,7 +517,6 @@ body {
     font-weight: bold;
 }
 
-.prijavnica {
-    width: 100vw;
-    height: auto;
+.prijavnica img {
+    width: 100%;
 }
