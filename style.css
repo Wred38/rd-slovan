@@ -31,7 +31,6 @@ body {
 .header-left {
     display: flex;
     align-items: center;
-
 }
 
 .header-logo-cont {
@@ -51,9 +50,25 @@ body {
     border-radius: 100px;
 }
 
-.slogan {
-    transform: rotate(-10deg);
-    width: 250px;
+@media (min-width:450px) {
+    .slogan {
+        transform: rotate(-10deg);
+        width: 250px;
+    }
+
+    .header-left {
+        align-items: center;
+    }
+}
+
+@media (max-width:450px) {
+    .slogan {
+        display: none;
+    }
+
+    .header-left {
+        align-items: flex-start;
+    }
 }
 
 @media (min-width: 570px) {
@@ -63,6 +78,20 @@ body {
 }
 
 @media (max-width: 570px) {
+    .meni {
+        display: flex;
+        justify-content: end;
+        align-items: baseline;
+    }
+}
+
+@media (max-width: 450px) {
+    .meni {
+        display: none;
+    }
+}
+
+@media (max-width: 330px) {
     .meni {
         display: flex;
         justify-content: end;
@@ -129,6 +158,12 @@ body {
     }
 }
 
+@media(max-width: 380px) {
+    .pages-links {
+        margin-left: 8px;
+        padding-left: 8px;
+    }
+}
 
 .pages-links a {
     text-align: center;
@@ -147,9 +182,9 @@ body {
     color: azure;
     font-weight: 800;
     text-align: center;
-    background-image: url(./images/igralci/Skupinska_clani.png);
+    background-image: url(./images/igralci/Skupinska_clani.jpg);
     background-size: cover;
-    background-position: 0% 50%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     text-shadow: 2px 2px 2px gray;
 }
@@ -237,12 +272,21 @@ body {
     background-color: #ffffff;
 }
 
-.spons-title p {
-    font-size: 50px;
-    font-weight: 700;
-    padding-left: 50px;
+@media (min-width: 400px) {
+    .spons-title p {
+        font-size: 50px;
+        font-weight: 700;
+        padding-left: 50px;
+    }
 }
 
+@media (max-width: 400px) {
+    .spons-title p {
+        font-size: 40px;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+}
 
 .spons-logo-cont {
     display: flex;
