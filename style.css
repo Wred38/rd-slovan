@@ -50,7 +50,15 @@ body {
     border-radius: 100px;
 }
 
-@media (min-width:450px) {
+@media (max-width: 620px) {
+    .header-left {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: 450px) {
     .slogan {
         transform: rotate(-10deg);
         width: 250px;
@@ -61,7 +69,7 @@ body {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
     .slogan {
         display: none;
     }
@@ -69,38 +77,6 @@ body {
     .header-left {
         align-items: flex-start;
     }
-}
-
-@media (min-width: 570px) {
-    .meni {
-        display: none;
-    }
-}
-
-@media (max-width: 570px) {
-    .meni {
-        display: flex;
-        justify-content: end;
-        align-items: baseline;
-    }
-}
-
-@media (max-width: 450px) {
-    .meni {
-        display: none;
-    }
-}
-
-@media (max-width: 330px) {
-    .meni {
-        display: flex;
-        justify-content: end;
-        align-items: baseline;
-    }
-}
-
-.meni p {
-    color: azure;
 }
 
 @media(min-width: 940px) {
@@ -184,7 +160,7 @@ body {
     text-align: center;
     background-image: url(./images/igralci/Skupinska_clani.jpg);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 45%;
     background-repeat: no-repeat;
     text-shadow: 2px 2px 2px gray;
 }
@@ -378,6 +354,22 @@ body {
     font-weight: 300;
 }
 
+.photographer {
+    padding: 0px 110px;
+    margin: 0px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 400px) {
+    .title {
+        padding-left: 50px;
+    }
+
+    .photographer {
+        padding-left: 60px;
+    }
+}
+
 .kontakt-cont {
     display: flex;
     justify-content: space-between;
@@ -441,6 +433,14 @@ body {
     height: 48px;
     width: auto;
     padding: 0px 8px;
+}
+
+@media (max-width: 500px) {
+
+    .info,
+    .info-soc {
+        padding-left: 40px;
+    }
 }
 
 .koledar-piece {
@@ -517,10 +517,10 @@ body {
     margin: 3px;
 }
 
-.photographer {
-    padding: 0px 110px;
-    margin: 0px;
-    margin-bottom: 80px;
+@media (max-width: 400px) {
+    .galerija-cont img {
+        width: 95vw;
+    }
 }
 
 #galerija-title {
@@ -531,7 +531,7 @@ body {
 .player-cont {
     display: flex;
     margin-bottom: 24px;
-    margin-left: 42px;
+    margin-left: 24px;
 }
 
 @media (min-width: 450px) {
@@ -549,6 +549,7 @@ body {
         height: 100%;
         margin-right: 24px;
         border-radius: 4px;
+
     }
 }
 
