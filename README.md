@@ -1,18 +1,14 @@
 # rd-slovan
 
 website for rd slovan
+rdslovan.si
 
 TODO:
 slika pirnat, stopar, cvijo
 
-a je sponsor arangement uredu
+bolsi nacin za tekme JAVASCRIPT
 
 mogoce wrap na igralcih na clanska ekipa
 
-testiraj na mobile
-
 uredi alignment na koledarju
-uredi overflow
 
-DOMENA:
-spletnik.si

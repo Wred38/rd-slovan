@@ -562,6 +562,10 @@ body {
     font-weight: bold;
 }
 
+.prijavnica{
+    padding: 8px 0px;
+}
+
 .prijavnica img {
     width: 100%;
 }
