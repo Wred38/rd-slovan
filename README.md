@@ -5,7 +5,6 @@ rdslovan.si
 
 TODO:
 slika pirnat, stopar, cvijo
-test new koledar concept for diferent device sizes
 
 create tekme.json
 

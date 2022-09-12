@@ -287,6 +287,5 @@ function createCalendar(arr) {
         $(`<div id="e${i}" class="koledar-team" />`).appendTo(`#b${i}.koledar-piece-lower`);
         $(`<p>${arr[i].away}</p>`).appendTo(`#e${i}.koledar-team`);
         $('<img src="' + getTeamImgs(arr[i].away) + '" >').appendTo(`#e${i}.koledar-team`);
-
     }
 }
