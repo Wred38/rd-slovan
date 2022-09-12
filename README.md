@@ -5,6 +5,7 @@ rdslovan.si
 
 TODO:
 slika pirnat, stopar, cvijo
+test new koledar concept for diferent device sizes
 
 bolsi nacin za tekme JAVASCRIPT
 
