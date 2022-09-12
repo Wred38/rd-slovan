@@ -7,7 +7,7 @@ TODO:
 slika pirnat, stopar, cvijo
 test new koledar concept for diferent device sizes
 
-bolsi nacin za tekme JAVASCRIPT
+create tekme.json
 
 mogoce wrap na igralcih na clanska ekipa
 

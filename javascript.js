@@ -222,6 +222,7 @@ const tekme = [
 
 function getTeamImgs(team) {
     let teamImg = "./images/ekipe/"
+
     if (team == "RD LL Grosist Slovan") {
         teamImg += "Slovan-logo-new.svg"
     }
@@ -273,19 +274,17 @@ function getTeamImgs(team) {
 
 function createCalendar(arr) {
     for (let i = 0; i < arr.length; i++) {
-        $(`<div id="a${i}" class="koledar-piece-new" />`).appendTo(`.koledar-cont`);
-        $(`<div id="b${i}" class="koledar-piece-upper" />`).appendTo(`#a${i}.koledar-piece-new`);
+        $(`<div id="a${i}" class="koledar-piece" />`).appendTo(`.koledar-cont`);
+        $(`<div id="b${i}" class="koledar-piece-upper" />`).appendTo(`#a${i}.koledar-piece`);
         $(`<p />`).text(arr[i].liga).appendTo(`#b${i}.koledar-piece-upper`);
-        $(`<div class="absolute-middle" />`).text(arr[i].date).appendTo(`#b${i}.koledar-piece-upper`);
+        $(`<div class="koledar-middle" />`).text(arr[i].date).appendTo(`#b${i}.koledar-piece-upper`);
         $(`<p>${arr[i].dvorana}</p>`).appendTo(`#b${i}.koledar-piece-upper`);
-        $(`<div id="b${i}" class="koledar-piece-lower" />`).appendTo(`#a${i}.koledar-piece-new`);
+        $(`<div id="b${i}" class="koledar-piece-lower" />`).appendTo(`#a${i}.koledar-piece`);
         $(`<div id="c${i}" class="koledar-team" />`).appendTo(`#b${i}.koledar-piece-lower`);
         $(`<img src="` + getTeamImgs(arr[i].home) + `" >`).appendTo(`#c${i}.koledar-team`);
         $(`<p>${arr[i].home}</p>`).appendTo(`#c${i}.koledar-team`);
-        
-        $(`<div id="d${i}" class="koledar-rez absolute-middle" />`).text(arr[i].result).appendTo(`#b${i}.koledar-piece-lower`);
+        $(`<div id="d${i}" class="koledar-rez koledar-middle" />`).text(arr[i].result).appendTo(`#b${i}.koledar-piece-lower`);
         $(`<div id="e${i}" class="koledar-team" />`).appendTo(`#b${i}.koledar-piece-lower`);
-        
         $(`<p>${arr[i].away}</p>`).appendTo(`#e${i}.koledar-team`);
         $('<img src="' + getTeamImgs(arr[i].away) + '" >').appendTo(`#e${i}.koledar-team`);
 

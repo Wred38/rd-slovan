@@ -443,33 +443,6 @@ body {
     }
 }
 
-.koledar-piece {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 36px;
-    background-color: #dbdbdb;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 4px 0px;
-    border-radius: 2px;
-}
-
-.koledar-piece-l {
-    text-align: left;
-}
-
-.koledar-piece-l p {
-    margin: 4px 0px;
-}
-
-.koledar-piece-m {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    font-size: 20px;
-}
-
 .koledar-team {
     display: flex;
     align-items: center;
@@ -499,15 +472,7 @@ body {
     height: 52px;
 }
 
-.koledar-piece-r {
-    text-align: right;
-}
-
-.koledar-piece-r p {
-    margin: 16px 0px;
-}
-
-.koledar-piece-new {
+.koledar-piece {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -520,25 +485,71 @@ body {
     border-radius: 2px;
 }
 
-.koledar-piece-upper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    border-bottom: 1px dashed black;
+
+
+@media(min-width: 768px) {
+    .koledar-piece-upper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        border-bottom: 1px dashed black;
+    }
+
+    .koledar-piece-upper p {
+        padding: 0px 16px;
+        font-size: 16px;
+    }
+
+    .koledar-piece-lower {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+
+    .koledar-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .koledar-middle p {
+        text-align: center;
+    }
 }
 
-.koledar-piece-upper p {
-    padding: 0px 16px;
-    font-size: 16px;
-}
+@media(max-width: 768px) {
+    .koledar-piece p{
+        text-align: center;
+    }
 
-.koledar-piece-lower {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
+    .koledar-piece-upper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        border-bottom: 1px dashed black;
+    }
 
+    .koledar-piece-upper p {
+        padding: 0px 16px;
+        font-size: 16px;
+    }
+
+    .koledar-piece-lower {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .koledar-middle p {
+        text-align: center;
+    }
 }
 
 .galerija-cont {
@@ -606,15 +617,4 @@ body {
 
 .prijavnica img {
     width: 100%;
-}
-
-.absolute-middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.absolute-middle p {
-    text-align: center;
 }
