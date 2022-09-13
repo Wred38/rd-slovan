@@ -248,7 +248,7 @@ body {
 
 .tekma-logo {
     display: flex;
-    max-height: 150px;
+    max-height: 135px;
     max-width: 100%;
     margin: 8px;
     justify-content: space-between;

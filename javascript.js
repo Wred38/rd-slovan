@@ -220,7 +220,6 @@ const tekme = [
 ]
 
 function displayNextMatch(arr) {
-
     let dateStr
     let d
     let m
@@ -229,6 +228,7 @@ function displayNextMatch(arr) {
     let min
     const today = new Date()
     let matchDate
+    let day
 
     for (let i = 0; i < arr.length; i++) {
         dateStr = arr[i].date
@@ -238,12 +238,10 @@ function displayNextMatch(arr) {
         h = Number(dateStr.substr(13, 2))
         min = Number(dateStr.substr(16, 2))
         matchDate = new Date(y, m - 1, d, h, min)
-        console.log(`tekma ${i + 1}: ${m}/${d}/${y}`)
-        console.log(matchDate)
-
         if (today < matchDate) {
+            day = matchDate.toString().substr(0, 3)
             let datePara = document.querySelector('.tekma-date')
-            datePara.textContent = arr[i].date
+            datePara.textContent = dayToSlovene(day) + ' ' + arr[i].date
             let kindPara = document.querySelector('.tekma-kind')
             kindPara.textContent = arr[i].liga
             document.querySelector('#home').src = getTeamImgs(arr[i].home);
@@ -252,6 +250,34 @@ function displayNextMatch(arr) {
         }
     }
 
+}
+
+function dayToSlovene(day) {
+    let matchDay
+
+    if (day == 'Mon') {
+        matchDay = 'Ponedeljek'
+    }
+    else if (day == 'Tue') {
+        matchDay = 'Torek'
+    }
+    else if (day == 'Wed') {
+        matchDay = 'Sreda'
+    }
+    else if (day == 'Thu') {
+        matchDay = 'Četrtek'
+    }
+    else if (day == 'Fri') {
+        matchDay = 'Petek'
+    }
+    else if (day == 'Sat') {
+        matchDay = 'Sobota'
+    }
+    else if (day == 'Sun') {
+        matchDay = 'Nedelja'
+    }
+
+    return matchDay
 }
 
 function getTeamImgs(team) {
