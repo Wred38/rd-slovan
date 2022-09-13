@@ -219,6 +219,40 @@ const tekme = [
     }
 ]
 
+function displayNextMatch(arr) {
+
+    let dateStr
+    let d
+    let m
+    let y
+    let h
+    let min
+    const today = new Date()
+    let matchDate
+
+    for (let i = 0; i < arr.length; i++) {
+        dateStr = arr[i].date
+        d = Number(dateStr.substr(0, 2))
+        m = Number(dateStr.substr(3, 2))
+        y = Number(dateStr.substr(6, 4))
+        h = Number(dateStr.substr(13, 2))
+        min = Number(dateStr.substr(16, 2))
+        matchDate = new Date(y, m - 1, d, h, min)
+        console.log(`tekma ${i + 1}: ${m}/${d}/${y}`)
+        console.log(matchDate)
+
+        if (today < matchDate) {
+            let datePara = document.querySelector('.tekma-date')
+            datePara.textContent = arr[i].date
+            let kindPara = document.querySelector('.tekma-kind')
+            kindPara.textContent = arr[i].liga
+            document.querySelector('#home').src = getTeamImgs(arr[i].home);
+            document.querySelector('#away').src = getTeamImgs(arr[i].away);
+            break
+        }
+    }
+
+}
 
 function getTeamImgs(team) {
     let teamImg = "./images/ekipe/"

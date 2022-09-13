@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+    <script src="javascript.js"></script>
     <script src="https://kit.fontawesome.com/cc973ad972.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -21,18 +22,19 @@
 </head>
 
 <body>
+    
     <div id="header"></div>
     <div class="body-sector">
         <div class="body-1">
             <div class="tekma-box">
                 <p class="tekma-title">NASLEDNJA TEKMA</p>
-                <p class="tekma-date">Sobota 17.9.2022 - 19:00</p>
-                <p class="tekma-time"></p>
-                <p class="tekma-kind">Liga NLB</p>
+                <p class="tekma-date"></p>
+                <p class="tekma-kind"></p>
                 <div class="tekma-logo-cont">
-                    <img class="tekma-logo" src="./images/ekipe/RK_Svis_IG_2.png" alt="Domaca ekipa">
-                    <img class="tekma-logo" src="./images/slovan/Slovan-logo-new.svg" alt="Gostujoca ekipa">
+                    <img class="tekma-logo" id="home" src="#" alt="Domaca ekipa">
+                    <img class="tekma-logo" id="away" src="#" alt="Gostujoca ekipa">
                 </div>
+                <script>displayNextMatch(tekme)</script>
             </div>
         </div>
         <div class="body-2">
