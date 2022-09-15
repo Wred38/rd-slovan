@@ -238,7 +238,7 @@ function displayNextMatch(arr) {
         h = Number(dateStr.substr(13, 2))
         min = Number(dateStr.substr(16, 2))
         matchDate = new Date(y, m - 1, d, h, min)
-        if (today < matchDate) {
+        if (today.getTime() < (matchDate.getTime() + 7200000)){
             day = matchDate.toString().substr(0, 3)
             let datePara = document.querySelector('.tekma-date')
             datePara.textContent = dayToSlovene(day) + ' ' + arr[i].date

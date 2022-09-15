@@ -15,21 +15,27 @@
 <body>
     <div class="foot-sector">
         <div>
-            <a href="https://www.instagram.com/rd_slovan/" target="_blank" rel="noopener noreferrer" title="@rd_slovan">
-                <img src="./images/instagram-logo-white.svg" alt="Instagram logo"></a>
-            <a href="https://www.facebook.com/rdslovan" target="_blank" rel="noopener noreferrer" title="rdslovan">
-                <img src="./images/facebook-logo-white.svg" alt="Facebook logo"></a>
+            <div class="soc-om">
+                <a href="https://www.instagram.com/rd_slovan/" target="_blank" rel="noopener noreferrer"
+                    title="@rd_slovan">
+                    <img src="./images/instagram-logo-white.svg" alt="Instagram logo"></a>
+                <a href="https://www.facebook.com/rdslovan" target="_blank" rel="noopener noreferrer" title="rdslovan">
+                    <img src="./images/facebook-logo-white.svg" alt="Facebook logo"></a>
+            </div>
+            <div>
+                <a href="mailto: info@rdslovan.si">info@rdslovan.si</a>
+            </div>
+            <div class="footer">
+                <p>RD LL GROSIST SLOVAN</p>
+                <p class="currentYear"></p>
+                <script>
+                    para = document.querySelector('.currentYear');
+                    para.textContent = new Date().getFullYear()
+                </script>
+            </div>
         </div>
-        <div>
-            <a href="mailto: info@rdslovan.si">info@rdslovan.si</a>
-        </div>
-        <div class="footer">
-            <p>RD LL GROSIST SLOVAN</p>
-            <p class="currentYear"></p>
-            <script>
-                para = document.querySelector('.currentYear');
-                para.textContent = new Date().getFullYear()
-            </script>
+        <div class="signature">
+            <p>Nik Javor</p>
         </div>
     </div>
 

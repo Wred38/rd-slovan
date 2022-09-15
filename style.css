@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&family=Rock+Salt&display=swap');
 
 html,
 body {
     overflow-x: auto;
     height: 100%;
-    
+
 }
 
 body {
@@ -50,7 +50,7 @@ body {
     border-radius: 100px;
 }
 
-.slogan{
+.slogan {
     transform: rotate(-10deg);
 }
 
@@ -82,6 +82,7 @@ body {
         align-items: flex-start;
     }
 }
+
 .pages-links a {
     text-align: center;
     text-decoration: none;
@@ -151,12 +152,13 @@ body {
 }
 
 @media(max-width: 365px) {
-    .pages-links{
+    .pages-links {
         margin-left: 0px;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .pages-links a{
+
+    .pages-links a {
         margin-left: 0px;
         padding-left: 0px;
     }
@@ -340,6 +342,17 @@ body {
     background-color: #540f0c;
     color: #ffffff;
     padding: 24px;
+    position: relative;
+}
+
+.foot-sector div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-sector .soc-om {
+    flex-direction: row;
 }
 
 .footer {
@@ -363,6 +376,22 @@ body {
     color: #ffffff;
 }
 
+@media (min-width: 770px){
+    .signature {
+        position: absolute;
+        bottom: 16px;
+        right: 5%;
+        
+    }
+}
+
+.signature p {
+    font-family: 'Rock Salt', cursive;
+    margin: 8px 0;
+    font-size: 24px;
+    transform: rotate(5deg)
+}
+
 .title {
     padding: 20px 100px;
     font-size: 60px;
@@ -384,6 +413,7 @@ body {
         padding-left: 60px;
     }
 }
+
 @media (max-width: 320px) {
     .title {
         padding-left: 10px;
@@ -545,7 +575,7 @@ body {
 }
 
 @media(max-width: 768px) {
-    .koledar-piece p{
+    .koledar-piece p {
         text-align: center;
     }
 
