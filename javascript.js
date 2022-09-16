@@ -1,13 +1,3 @@
-function getAge(x, y) {
-    let dob = new Date(x); // string, month/day/year, example = '00/00/0000'
-    let month_diff = Date.now() - dob.getTime();
-    let age_dt = new Date(month_diff);
-    let year = age_dt.getUTCFullYear();
-    let age = Math.abs(year - 1970);
-    let para = document.querySelector(y); // string, id, example = '#selakovic' 
-    para.textContent += 'Starost: ' + age + 'let'
-}
-
 const tekme = [
     {
         home: "RD LL Grosist Slovan",
@@ -219,6 +209,26 @@ const tekme = [
     }
 ]
 
+function hamburgerFunc() {
+    let x = document.querySelector(".drop-links");
+    if (getComputedStyle(x).display === "flex") {
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "flex";
+    }
+}
+
+function getAge(x, y) {
+    let dob = new Date(x); // string, month/day/year, example = '00/00/0000'
+    let month_diff = Date.now() - dob.getTime();
+    let age_dt = new Date(month_diff);
+    let year = age_dt.getUTCFullYear();
+    let age = Math.abs(year - 1970);
+    let para = document.querySelector(y); // string, id, example = '#selakovic' 
+    para.textContent += 'Starost: ' + age + 'let'
+}
+
 function displayNextMatch(arr) {
     let dateStr
     let d
@@ -238,7 +248,7 @@ function displayNextMatch(arr) {
         h = Number(dateStr.substr(13, 2))
         min = Number(dateStr.substr(16, 2))
         matchDate = new Date(y, m - 1, d, h, min)
-        if (today.getTime() < (matchDate.getTime() + 7200000)){
+        if (today.getTime() < (matchDate.getTime() + 7200000)) {
             day = matchDate.toString().substr(0, 3)
             let datePara = document.querySelector('.tekma-date')
             datePara.textContent = dayToSlovene(day) + ' ' + arr[i].date
