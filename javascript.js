@@ -11,14 +11,14 @@ const tekme = [
         home: "RK Svi&scaron; Ivan&ccaron;na Gorica",
         away: "RD LL Grosist Slovan",
         date: "17.09.2022 - 19:00",
-        result: "00:00",
+        result: "23:23",
         liga: "Liga NLB",
         dvorana: "Dvorana Osnovne &scaron;ole Sti&ccaron;na"
     },
     {
         home: "RD LL Grosist Slovan",
         away: "RD Riko Ribnica",
-        date: "24.09.2022 - 18:30",
+        date: "23.09.2022 - 18:30",
         result: "00:00",
         liga: "Liga NLB",
         dvorana: "&Scaron;portna dvorana Kodeljevo",
