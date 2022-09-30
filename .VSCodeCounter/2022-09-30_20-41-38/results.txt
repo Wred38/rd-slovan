@@ -1,0 +1,65 @@
+Date : 2022-09-30 20:41:38
+Directory : /Users/nikjavor/repos/rd-slovan
+Total : 33 files,  6453 codes, 29 comments, 273 blanks, all 6755 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| XML        |         20 |      4,396 |          7 |         28 |      4,431 |
+| HTML       |          9 |        808 |         11 |         45 |        864 |
+| CSS        |          1 |        741 |         10 |        168 |        919 |
+| JavaScript |          2 |        500 |          1 |         25 |        526 |
+| Markdown   |          1 |          8 |          0 |          7 |         15 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                        |         33 |      6,453 |         29 |        273 |      6,755 |
+| images                                                                   |         20 |      4,396 |          7 |         28 |      4,431 |
+| images/ekipe                                                             |          1 |        383 |          0 |          1 |        384 |
+| images/slovan                                                            |          6 |      1,390 |          0 |          6 |      1,396 |
+| images/sponsors                                                          |          9 |      1,308 |          3 |         11 |      1,322 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                 | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/nikjavor/repos/rd-slovan/README.md                                | Markdown   |          8 |          0 |          7 |         15 |
+| /Users/nikjavor/repos/rd-slovan/clanskaEkipa.html                        | HTML       |        316 |          1 |          4 |        321 |
+| /Users/nikjavor/repos/rd-slovan/footer.html                              | HTML       |         48 |          1 |          5 |         54 |
+| /Users/nikjavor/repos/rd-slovan/galerija.html                            | HTML       |         58 |          1 |          4 |         63 |
+| /Users/nikjavor/repos/rd-slovan/header.html                              | HTML       |         67 |          1 |          5 |         73 |
+| /Users/nikjavor/repos/rd-slovan/images/ekipe/Slovan-logo-new.svg         | XML        |        383 |          0 |          1 |        384 |
+| /Users/nikjavor/repos/rd-slovan/images/facebook-logo-bw.svg              | XML        |        615 |          1 |          3 |        619 |
+| /Users/nikjavor/repos/rd-slovan/images/facebook-logo-white.svg           | XML        |        614 |          1 |          3 |        618 |
+| /Users/nikjavor/repos/rd-slovan/images/instagram-logo-bw.svg             | XML        |         42 |          1 |          2 |         45 |
+| /Users/nikjavor/repos/rd-slovan/images/instagram-logo-white.svg          | XML        |         44 |          1 |          2 |         47 |
+| /Users/nikjavor/repos/rd-slovan/images/slovan/Slovan-logo-croped.svg     | XML        |        177 |          0 |          1 |        178 |
+| /Users/nikjavor/repos/rd-slovan/images/slovan/Slovan-logo-new croped.svg | XML        |        199 |          0 |          1 |        200 |
+| /Users/nikjavor/repos/rd-slovan/images/slovan/Slovan-logo-new.svg        | XML        |        383 |          0 |          1 |        384 |
+| /Users/nikjavor/repos/rd-slovan/images/slovan/Slovan-logo.svg            | XML        |        382 |          0 |          1 |        383 |
+| /Users/nikjavor/repos/rd-slovan/images/slovan/slovanovakri-b.svg         | XML        |        111 |          0 |          1 |        112 |
+| /Users/nikjavor/repos/rd-slovan/images/slovan/slovanovakri-w.svg         | XML        |        138 |          0 |          1 |        139 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/BTC-logo.svg             | XML        |        225 |          0 |          1 |        226 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/Decathlon-logo.svg       | XML        |         73 |          0 |          0 |         73 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/ENLJ-logo.svg            | XML        |        119 |          1 |          2 |        122 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/Fizian-logo.svg          | XML        |        150 |          0 |          1 |        151 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/Kempa-logo.svg           | XML        |         57 |          1 |          2 |         60 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/LLGrosist-logo.svg       | XML        |        203 |          1 |          2 |        206 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/LPP-logo.svg             | XML        |        162 |          0 |          1 |        163 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/LPT-logo.svg             | XML        |         61 |          0 |          1 |         62 |
+| /Users/nikjavor/repos/rd-slovan/images/sponsors/MOL-logo.svg             | XML        |        258 |          0 |          1 |        259 |
+| /Users/nikjavor/repos/rd-slovan/index.html                               | HTML       |         85 |          2 |          6 |         93 |
+| /Users/nikjavor/repos/rd-slovan/javascript.js                            | JavaScript |        214 |          1 |         22 |        237 |
+| /Users/nikjavor/repos/rd-slovan/koledar.html                             | HTML       |         40 |          1 |          4 |         45 |
+| /Users/nikjavor/repos/rd-slovan/kontakt.html                             | HTML       |         77 |          1 |          4 |         82 |
+| /Users/nikjavor/repos/rd-slovan/lists.js                                 | JavaScript |        286 |          0 |          3 |        289 |
+| /Users/nikjavor/repos/rd-slovan/rokometnaSola.html                       | HTML       |         85 |          1 |          9 |         95 |
+| /Users/nikjavor/repos/rd-slovan/style.css                                | CSS        |        741 |         10 |        168 |        919 |
+| /Users/nikjavor/repos/rd-slovan/templates.html                           | HTML       |         32 |          2 |          4 |         38 |
+| Total                                                                    |            |      6,453 |         29 |        273 |      6,755 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -569,6 +569,19 @@ body {
 
 /*  KOLEDAR  KOLEDAR  KOLEDAR  */
 
+.koledar-piece {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 36px;
+    background-color: #dbdbdb;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 4px 0px;
+    border-radius: 2px;
+}
+
 .koledar-team {
     display: flex;
     align-items: center;
@@ -584,7 +597,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #e1221c;
-    color: #fafafa;
+    color: white;
     border-radius: 2px;
     padding: 8px;
 }
@@ -596,19 +609,6 @@ body {
 .koledar-team img {
     width: 52px;
     height: 52px;
-}
-
-.koledar-piece {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 36px;
-    background-color: #dbdbdb;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 4px 0px;
-    border-radius: 2px;
 }
 
 @media(min-width: 769px) {
