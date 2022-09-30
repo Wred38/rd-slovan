@@ -26,10 +26,13 @@
     <div class="head-sector">
         <div class="header">
             <div class="header-left">
-                <div class="header-logo-cont">
-                    <img src="./images/slovan/Slovan-logo.svg" alt="Slovan logo" class="header-logo">
+                <img src="./images/slovan/Slovan-logo-white.gif" alt="Slovan logo" class="header-logo">
+                <div class="header-title">
+                    <p class="header-title1">ROKOMETNO DRU&Scaron;TVO</p>
+                    <P class="header-title2">LL GROSIST SLOVAN</P>
+                    <p class="header-title3">Ljubljana - Slovenija</p>
                 </div>
-                <img class="slogan" src="./images/slovan/slovanovakri-w.svg" alt="#slovanovakri">
+
             </div>
             <div class="pages-links">
                 <div class="link-box">
@@ -46,6 +49,12 @@
             <a href="javascript:void(0);" class="hamburger" onclick="hamburgerFunc()">
                 <i class="fa fa-bars"></i>
             </a>
+            <script>
+                hamburger = document.querySelector('.hamburger')
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('hamburger-active')
+                })
+            </script>
         </div>
         <div class="drop-links">
             <a href="index.html">Domov</a>
@@ -55,10 +64,8 @@
             <a href="rokometnaSola.html">Rokometna &scaron;ola</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
-        <div class="header-title">
-            <p class="header-title1">ROKOMETNO DRU&Scaron;TVO</p>
-            <P class="header-title2">RD LL GROSIST SLOVAN</P>
-            <p class="header-title3">Ljubljana - Slovenija</p>
+        <div class="header-picture">
+            <img class="slogan" src="./images/slovan/slovanovakri-w.svg" alt="#slovanovakri">
         </div>
     </div>
 </body>

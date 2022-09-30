@@ -1,213 +1,3 @@
-const tekme = [
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RD Urbanscape Loka",
-        date: "09.09.2022 - 18:30",
-        result: "24:27",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna dvorana Kodeljevo"
-    },
-    {
-        home: "RK Svi&scaron; Ivan&ccaron;na Gorica",
-        away: "RD LL Grosist Slovan",
-        date: "17.09.2022 - 19:00",
-        result: "23:23",
-        liga: "Liga NLB",
-        dvorana: "Dvorana Osnovne &scaron;ole Sti&ccaron;na"
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RD Riko Ribnica",
-        date: "23.09.2022 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna dvorana Kodeljevo",
-    },
-    {
-        home: "RK Maribor Branik",
-        away: "RD LL Grosist Slovan",
-        date: "01.10.2022 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "Dvorana Tabor",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Celje Pivovarna La&scaron;ko",
-        date: "08.10.2022 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RK Slovenj Gradec",
-        away: "RD LL Grosist Slovan",
-        date: "22.10.2022 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Slovenj Gradec",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "MRK Krka",
-        date: "05.11.2022 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RK Jeruzalem Ormo&zcaron;",
-        away: "RD LL Grosist Slovan",
-        date: "12.11.2022 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Hardek",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Gorenje Velenje",
-        date: "19.11.2022 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RD Koper",
-        away: "RD LL Grosist Slovan",
-        date: "26.11.2022 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "Arena Bonifika",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Kr&scaron;ko",
-        date: "03.12.2022 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Dobova",
-        date: "10.12.2022 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RK Trimo Trebnje",
-        away: "RD LL Grosist Slovan",
-        date: "17.12.2022 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "Dvorana O&Scaron; Trebnje",
-    },
-    {
-        home: "RD Urbanscape Loka",
-        away: "RD LL Grosist Slovan",
-        date: "04.02.2023 - 18:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Poden",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Svi&scaron; Ivan&ccaron;na Gorica",
-        date: "11.02.2023 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RD Riko Ribnica",
-        away: "RD LL Grosist Slovan",
-        date: "25.02.2023 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;RC Ribnica",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Maribor Branik",
-        date: "04.03.2023 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RK Celje Pivovarna La&scaron;ko",
-        away: "RD LL Grosist Slovan",
-        date: "18.03.2023 - 18:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "Dvorana Zlatorog",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Slovenj Gradec",
-        date: "25.03.2023 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "MRK Krka",
-        away: "RD LL Grosist Slovan",
-        date: "01.04.2023 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Marof",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Jeruzalem Ormo&zcaron;",
-        date: "08.04.2023 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RK Gorenje Velenje",
-        away: "RD LL Grosist Slovan",
-        date: "15.04.2023 - 18:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "Rde&ccaron;a Dvorana",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RD Koper",
-        date: "22.04.2023 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    },
-    {
-        home: "RK Kr&scaron;ko",
-        away: "RD LL Grosist Slovan",
-        date: "13.05.2023 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "Dvorana &Scaron;C Kr&scaron;ko",
-    },
-    {
-        home: "RK Dobova",
-        away: "RD LL Grosist Slovan",
-        date: "20.05.2023 - 19:00",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Dobova",
-    },
-    {
-        home: "RD LL Grosist Slovan",
-        away: "RK Trimo Trebnje",
-        date: "27.05.2023 - 18:30",
-        result: "00:00",
-        liga: "Liga NLB",
-        dvorana: "&Scaron;portna Dvorana Kodeljevo",
-    }
-]
 
 function hamburgerFunc() {
     let x = document.querySelector(".drop-links");
@@ -229,37 +19,106 @@ function getAge(x, y) {
     para.textContent += 'Starost: ' + age + 'let'
 }
 
-function displayNextMatch(arr) {
+function getNextMatchDate(array, index) {
     let dateStr
     let d
     let m
     let y
     let h
     let min
-    const today = new Date()
     let matchDate
-    let day
+    dateStr = array[index].date
+    d = Number(dateStr.substr(0, 2))
+    m = Number(dateStr.substr(3, 2))
+    y = Number(dateStr.substr(6, 4))
+    h = Number(dateStr.substr(13, 2))
+    min = Number(dateStr.substr(16, 2))
+    matchDate = new Date(y, m - 1, d, h, min)
+    return matchDate
+}
 
+function displayNextMatch(arr) {
+    const today = new Date()
+    let day
     for (let i = 0; i < arr.length; i++) {
-        dateStr = arr[i].date
-        d = Number(dateStr.substr(0, 2))
-        m = Number(dateStr.substr(3, 2))
-        y = Number(dateStr.substr(6, 4))
-        h = Number(dateStr.substr(13, 2))
-        min = Number(dateStr.substr(16, 2))
-        matchDate = new Date(y, m - 1, d, h, min)
-        if (today.getTime() < (matchDate.getTime() + 7200000)) {
-            day = matchDate.toString().substr(0, 3)
+        if (today.getTime() < (getNextMatchDate(arr, i).getTime() + 7200000)) {
+            day = getNextMatchDate(arr, i).toString().substr(0, 3)
             let datePara = document.querySelector('.tekma-date')
-            datePara.textContent = dayToSlovene(day) + ' ' + arr[i].date
+            datePara.textContent = dayToSlovene(day).toLowerCase() + ' ' + arr[i].date
             let kindPara = document.querySelector('.tekma-kind')
-            kindPara.textContent = arr[i].liga
+            if (arr[i].liga == "Liga NLB") {
+                kindPara.textContent = ""
+                $(`<img src="./images/ekipe/NLB_liga.png" />`).appendTo(kindPara)
+            }
+            else {
+                kindPara.textContent = arr[i].liga
+            };
             document.querySelector('#home').src = getTeamImgs(arr[i].home);
             document.querySelector('#away').src = getTeamImgs(arr[i].away);
             break
         }
     }
+}
 
+function displayMatchCountdown(arr) {
+    const today = new Date()
+    for (let i = 0; i < arr.length; i++) {
+        if (today.getTime() < (getNextMatchDate(arr, i).getTime() + 7200000)) {
+            matchTime = getNextMatchDate(arr, i)
+            console.log(matchTime)
+            break
+        }
+    }
+    let x = setInterval(function () {
+        let now = new Date().getTime();
+        let distance = matchTime - now;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        let d = "dni "
+        let h = "ur "
+        let m = "min "
+        let s = "sek "
+
+        if (days == 1) {
+            d = "dan "
+        }
+        if (hours < 5) {
+            if (hours = 2) {
+                h = "uri "
+            }
+            else if (hours == 1) {
+                h = "ura "
+            }
+            else {
+                h = "ure "
+            }
+        }
+
+        if (days == 0) {
+            document.querySelector(".tekma-countdown").innerText = hours + h
+                + minutes + m + seconds + s;
+        }
+        else if (days + hours == 0) {
+            document.querySelector(".tekma-countdown").innerText = minutes + m + seconds + s;
+        }
+        else if (days + hours + minutes == 0) {
+            document.querySelector(".tekma-countdown").innerText = seconds + s;
+        }
+        else {
+            document.querySelector(".tekma-countdown").innerText = days + d + hours + h
+                + minutes + m + seconds + s;
+        }
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.querySelector(".tekma-countdown").innerText = "LIVE!";
+        }
+    }, 1000);
 }
 
 function dayToSlovene(day) {
@@ -308,7 +167,7 @@ function getTeamImgs(team) {
     else if (team == "RK Maribor Branik") {
         teamImg += "rk_branik_maribor.png"
     }
-    else if (team == "RK Celje Pivovarna La&scaron;ko") {
+    else if (team == "RK Celje Pivoletna La&scaron;ko") {
         teamImg += "RK_CPL.png"
     }
     else if (team == "RK Slovenj Gradec") {
@@ -344,18 +203,34 @@ function getTeamImgs(team) {
 
 function createCalendar(arr) {
     for (let i = 0; i < arr.length; i++) {
-        $(`<div id="a${i}" class="koledar-piece" />`).appendTo(`.koledar-cont`);
-        $(`<div id="b${i}" class="koledar-piece-upper" />`).appendTo(`#a${i}.koledar-piece`);
-        $(`<p />`).text(arr[i].liga).appendTo(`#b${i}.koledar-piece-upper`);
-        $(`<div class="koledar-middle" />`).text(arr[i].date).appendTo(`#b${i}.koledar-piece-upper`);
-        $(`<p>${arr[i].dvorana}</p>`).appendTo(`#b${i}.koledar-piece-upper`);
-        $(`<div id="b${i}" class="koledar-piece-lower" />`).appendTo(`#a${i}.koledar-piece`);
-        $(`<div id="c${i}" class="koledar-team" />`).appendTo(`#b${i}.koledar-piece-lower`);
-        $(`<img src="` + getTeamImgs(arr[i].home) + `" >`).appendTo(`#c${i}.koledar-team`);
-        $(`<p>${arr[i].home}</p>`).appendTo(`#c${i}.koledar-team`);
-        $(`<div id="d${i}" class="koledar-rez koledar-middle" />`).text(arr[i].result).appendTo(`#b${i}.koledar-piece-lower`);
-        $(`<div id="e${i}" class="koledar-team" />`).appendTo(`#b${i}.koledar-piece-lower`);
-        $(`<p>${arr[i].away}</p>`).appendTo(`#e${i}.koledar-team`);
-        $('<img src="' + getTeamImgs(arr[i].away) + '" >').appendTo(`#e${i}.koledar-team`);
+        $(`<div id="${i}" class="koledar-piece" />`).appendTo(`.koledar-cont`);
+        $(`<div id="${i}" class="koledar-piece-upper" />`).appendTo(`#${i}.koledar-piece`);
+        $(`<p />`).text(arr[i].liga).appendTo(`#${i}.koledar-piece-upper`);
+        $(`<div class="koledar-middle" />`).text(arr[i].date).appendTo(`#${i}.koledar-piece-upper`);
+        $(`<p>${arr[i].dvorana}</p>`).appendTo(`#${i}.koledar-piece-upper`);
+        $(`<div id="${i}" class="koledar-piece-lower" />`).appendTo(`#${i}.koledar-piece`);
+        $(`<div id="a${i}" class="koledar-team" />`).appendTo(`#${i}.koledar-piece-lower`);
+        $(`<img src="` + getTeamImgs(arr[i].home) + `" >`).appendTo(`#a${i}.koledar-team`);
+        $(`<p>${arr[i].home}</p>`).appendTo(`#a${i}.koledar-team`);
+        $(`<div id="${i}" class="koledar-rez koledar-middle" />`).text(arr[i].result).appendTo(`#${i}.koledar-piece-lower`);
+        $(`<div id="b${i}" class="koledar-team" />`).appendTo(`#${i}.koledar-piece-lower`);
+        $(`<p>${arr[i].away}</p>`).appendTo(`#b${i}.koledar-team`);
+        $('<img src="' + getTeamImgs(arr[i].away) + '" >').appendTo(`#b${i}.koledar-team`);
     }
 }
+
+function createMiniRokomet(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        $(`<div id="${i}" class="sola" />`).appendTo(`.sole`);
+        $(`<div id="${i}" class="sola-up" />`).appendTo(`#${i}.sola`);
+        $(`<p id="${i}" class="sola-ime" >${arr[i].sola}</p>`).appendTo(`#${i}.sola-up`);
+        $(`<p id="${i}" class="more-btn-inactive"><i class="fas fa-chevron-right"></i></p>`).appendTo(`#${i}.sola-up`);
+        $(`<div id="${i}" class="sola-podatki sola-podatki-hide" />`).appendTo(`#${i}.sola`);
+        $(`<p class="termin" />${arr[i].termin1}</p>`).appendTo(`#${i}.sola-podatki`);
+        $(`<p class="termin" />${arr[i].termin2}</p>`).appendTo(`#${i}.sola-podatki`);
+        $(`<p class="trener" />${arr[i].trener}</p>`).appendTo(`#${i}.sola-podatki`);
+    }
+}
+
+
+

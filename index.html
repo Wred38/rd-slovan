@@ -18,6 +18,7 @@
     <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
     <script src="javascript.js"></script>
+    <script src="lists.js"></script>
     <script src="https://kit.fontawesome.com/cc973ad972.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -43,7 +44,9 @@
                     <img class="tekma-logo" id="home" src="#" alt="Domaca ekipa">
                     <img class="tekma-logo" id="away" src="#" alt="Gostujoca ekipa">
                 </div>
+                <p class="tekma-countdown"></p>
                 <script>displayNextMatch(tekme)</script>
+                <script>displayMatchCountdown(tekme)</script>
             </div>
         </div>
         <div class="body-2">

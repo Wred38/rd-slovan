@@ -14,9 +14,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+    <LInk rel="stylesheet" href="style.css">
+    <LInk rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <LInk rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+    <script src="javascript.js"></script>
+    <script src="lists.js"></script>
     <script src="https://kit.fontawesome.com/cc973ad972.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -29,12 +31,65 @@
     <title>Rokometna &Scaron;ola - RD Slovan</title>
 </head>
 
-<body>
+<body id="rokometna-sola">
+
     <div id="header"></div>
-    <div class="prijavnica">
-        <img src="./images/rokometnaSola-prijavnica.png" alt="Prijavnica">
+    <div class="body-sector">
+        <h1 class="title">Rokometna &Scaron;ola</h1>
+        <div>
+            <p style="font-weight: 600;">ROKOMET JE DINAMIČEN EKIPNI ŠPORT Z ŽOGO, KJER ZARADI RAZNOLIKOSTI OTROKOM NI
+                NIKOLI DOLGČAS.</p>
+            <p style="font-weight: 600;">SKOZI ZABAVNE IGRE OTROCI RAZVIJAJO VSE GIBALNE SPOSOBNOSTI - POSTAJAJO
+                MOČNEJŠI, HITREJŠI IN SPRETNEJŠI
+                TER SE UČIJO ROKOVANJA Z ŽOGO. KER JE ROKOMET EKIPNI ŠPORT, SI OTROCI NA TRENINGIH HITRO NAJDEJO NOVE
+                PRIJATELJE. SLOVANOVA ROKOMETNA ŠOLA DELUJE NA 12 OSNOVNIH ŠOLAH V BLIŽINI ŠPORTNEGA PARKA KODELJEVO, KI
+                Z NOVIM ŠOLSKIM LETOM VABIJO K VPISU.</p>
+            <p>V spustnem seznamu poiščite osnovno šolo, ki jo obiskuje vaš sin, preverite kdaj potekajo treningi ter
+                kontaktirajte koordinatorja oziroma izpolnite pirloženo prijavnico.</p>
+        </div>
+        <div class="menu-and-prijavnica">
+            <div class="sole"></div>
+            <div class="prijavnica-big">
+                <h3>Prijavnica</h3>
+                <a href="./images/rokometna-sola-prijavnica.pdf"><img src="./icons/prijavnica-icon-big.png"
+                        alt="Prijavnica pdf"></a>
+            </div>
+
+
+        </div>
+        <script>createMiniRokomet(miniRokomet)</script>
+        <div>
+            <h2>ZAKAJ OTROKA VPISATI V &Scaron;OLO ROKOMETA?</h2>
+            <ul>
+                <li>IGRE Z ŽOGO OTROKOM PONUJAJO VEČ ZABAVE.</li>
+                <li>V EKIPNEM ŠPORTU HITRO SPOZNAŠ NOVE PRIJATELJE IN PRIJATELJICE.</li>
+                <li>OTROCI SE UČIJO USPEŠNEGA SODELOVANJA V KOLEKTIVU.</li>
+                <li>ZMAGE IN PORAZI SO SESTAVNI DEL ROKOMETA - OTROCI SE S POMOČJO PRIJATELJEV IN PRIJATELJIC S TEMI
+                    OBČUTKI LAŽJE SPOPRIJEMAJO IN NA TAK NAČIN ČUSTVENO DOZOREVAJO.</li>
+                <li>ZARADI RAZNOLIKOSTI ŠPORTA IMA ROKOMET VELIK VPLIV NA RAZVOJ VSEH GIBALNIH IN FUNKCIONALNIH
+                    SPOSOBNOSTI (MOČ, HITROST, VZDRŽLJIVOST, KOORDINACIJA, PRECIZNOST ...).</li>
+                <li>NAJOSNOVNEJŠE GIBANJE PRI IGRAH Z ŽOGO JE PRAV METANJE ŽOGE - ROKOMET ZATO PREDSTAVLJA ODLIČNO
+                    OSNOVO.</li>
+            </ul>
+        </div>
+        <div class="prijavnica-small">
+            <h3>Prijavnica:</h3>
+            <a href="./images/rokometna-sola-prijavnica.pdf"><img src="./icons/prijavnica-icon-small.png"
+                    alt="Prijavnica pdf"></a>
+        </div>
     </div>
     <div id="footer"></div>
+
+    <script>
+        sola = document.querySelectorAll(".sola-up")
+        sola.forEach(element => {
+            element.addEventListener('click', () => {
+                element.nextElementSibling.classList.toggle('sola-podatki-hide')
+                element.querySelector('.more-btn-inactive').classList.toggle('more-btn-active')
+            });
+        });
+    </script>
+
 </body>
 
 </html>
