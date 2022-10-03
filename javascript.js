@@ -65,18 +65,21 @@ function displayMatchCountdown(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (today.getTime() < (getNextMatchDate(arr, i).getTime() + 7200000)) {
             matchTime = getNextMatchDate(arr, i)
-            console.log(matchTime)
             break
         }
     }
     let x = setInterval(function () {
-        let now = new Date().getTime();
-        let distance = matchTime - now;
+        let now = new Date();
+        let distance = matchTime - now.getTime();
 
         let days = Math.floor(distance / (1000 * 60 * 60 * 24));
         let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        hours = hours.toLocaleString(undefined, {minimumIntegerDigits: 2});
+        minutes = minutes.toLocaleString(undefined, {minimumIntegerDigits: 2});
+        seconds = seconds.toLocaleString(undefined, {minimumIntegerDigits: 2});
 
         let d = "dni "
         let h = "ur "
@@ -87,26 +90,32 @@ function displayMatchCountdown(arr) {
             d = "dan "
         }
         if (hours < 5) {
-            if (hours = 2) {
+            if (hours == 2) {
                 h = "uri "
             }
             else if (hours == 1) {
                 h = "ura "
+            }
+            else if (hours == 0){
+                h = "ur "
             }
             else {
                 h = "ure "
             }
         }
 
-        if (days == 0) {
-            document.querySelector(".tekma-countdown").innerText = hours + h
-                + minutes + m + seconds + s;
+
+        if (days + hours + minutes == 0) {
+            document.querySelector(".tekma-countdown").innerText = seconds + s;
         }
         else if (days + hours == 0) {
+            console.log("d"+days)
+            console.log('h'+hours)
             document.querySelector(".tekma-countdown").innerText = minutes + m + seconds + s;
         }
-        else if (days + hours + minutes == 0) {
-            document.querySelector(".tekma-countdown").innerText = seconds + s;
+        else if (days == 0) {
+            document.querySelector(".tekma-countdown").innerText = hours + h
+                + minutes + m + seconds + s;
         }
         else {
             document.querySelector(".tekma-countdown").innerText = days + d + hours + h
@@ -118,6 +127,7 @@ function displayMatchCountdown(arr) {
             clearInterval(x);
             document.querySelector(".tekma-countdown").innerText = "LIVE!";
         }
+
     }, 1000);
 }
 
