@@ -27,7 +27,7 @@ const tekme = [
         home: "RK Maribor Branik",
         away: "RD LL Grosist Slovan",
         date: "01.10.2022 - 19:00",
-        result: "00:00",
+        result: "30:30",
         liga: "Liga NLB",
         dvorana: "Dvorana Tabor",
     },
